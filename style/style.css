@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+
+:root{
+    --color-font:#ffff;
+    --color-background-one:#8701CF;
+    --color-background-two:#ff7b29;
+    --color-btn-disable:#D0B7DE;
+    --color-btn-hover:#9B04ED;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: "Poppins",sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.bg_color_one{
+    background-color: var(--color-background-one);
+}
+.logo img{
+    width: 140px;
+}
+h1{
+    color: var(--color-font);
+    font-weight: bold;
+}
+p{
+    color: var(--color-font);
+    font-weight: 400;
+    font-size: 30px;
+}
+.grid_one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box_content_one{
+    margin-top: 30px;
+}
+.img01 img{
+    width: 600px;
+    height: 600px;
+}
+
+
+.grid_two{
+    display: grid;
+    grid-template-columns: repeat(2, 715px auto);
+}
+
+.bg_color_two{
+    background-color: var(--color-background-two);
+}
+.img02 img{
+    width: 600px;
+    height: 600px;
+}
+
+.box_content_two {
+    margin-top: 30px;
+}
+
+.bg_color_three{
+    background-color: var(--color-background-two);
+}
+
+
+.grid_three{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.box_three_content {
+    background-color: var(--color-background-one);
+}
+.box_three_content p {
+    width: 332px;
+}
+.box_three_form p {
+    width: 415px;
+}
+.content {
+    text-align: -webkit-center;
+}
+.img04 img{
+    width: 600px;
+    height: 600px;
+}
+.img04 {
+    display: grid;
+    justify-content: center;
+}
+label{
+    color: var(--color-font);
+}
+
+.form_camp {
+    display: grid;
+    justify-content: center;
+}
+input[type="text"]{
+    width: 415px;
+    height: 65px;
+    border-radius: 5px;
+    background-color:var(--color-font);
+}
+input[type="email"]{
+    width: 415px;
+    height: 65px;
+    border-radius: 5px;
+    background-color:var(--color-font);
+}
+
+input[type="checkbox"]{
+    width: 30px;
+    height: 18px;
+    border-radius: 5px;
+    background-color:var(--color-font);
+}
+
+
+label.form-check-label {
+    padding: 0 25px;
+}
+
+input#num {
+    width: 30px;
+    border-radius: 5px;
+}
+
+button.count{
+    width: 30px;
+    border-radius: 5px;
+    background-color: var(--color-background-one);
+    color: var(--color-font);
+    border-color: var(--color-background-one);
+    cursor: pointer;
+}
+button.count :hover{
+    background-color: var(--color-btn-hover);
+}
+
+input#qtyBox {
+    width: 35px;
+    border-radius: 5px;
+}
+
+.form-check {
+    margin-top: 20px;
+}
+.form_control {
+    display: grid;
+}
+
+.btn-submit {
+    margin-top: 45px;
+}
+button.btn-form {
+    width: 400px;
+    height: 65px;
+    background-color: var(--color-background-one);
+    color: var(--color-font);
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: var(--color-background-one);
+}
+button.btn-form:hover{
+    background-color: var(--color-btn-hover);
+    transition: 0.3s;
+}
+.small-message{
+    color: red;
+}
+.form_control.sucess input{
+    border: 3px solid #4eca64;
+}
+.form_control.error input{
+    border: 3px solid #db5a5a;
+}
+
+button:disabled{
+    opacity: .5;
+    cursor: default;
+}
+
+button:disabled{
+    background-color: var(--color-btn-disable);
+    color: var(--color-font);
+    font-weight: 800;
+}
+
+
+button:disabled:hover{
+   background-color: var(--color-btn-disable);
+}
+
+
+@media (max-width: 800px){
+    .grid_one{
+        display: grid;
+        display: block;
+    }
+    .box_img {
+        justify-content: center;
+        display: grid;
+    }
+    
+    .img01 img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .grid_two{
+        display: grid;
+    display: block;
+    }
+    .img02{
+        justify-content: end;
+        display: grid;
+
+    }
+    .img02 img {
+        width: 250px;
+        height: 250px;
+    }
+    .container.content_two{
+        padding-right: 0px;
+    }
+    .box_content_two {
+        margin-top: 0px;
+    }
+
+    .grid_three{
+        display: grid;
+        display: block;
+    }
+    .img04 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    input#name {
+        width: 321px;
+    }
+
+    input#email {
+        width: 321px;
+    }
+    .form_control {
+        display: grid;
+        justify-content: center;
+    }
+    button.btn-form {
+        width: 340px;
+        height: 65px;
+        background-color: var(--color-background-one);
+        color: var(--color-font);
+        cursor: pointer;
+        border-radius: 5px;
+        border-color: var(--color-background-one);
+    }
+
+}
